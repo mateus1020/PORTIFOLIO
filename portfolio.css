@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+}
+body {
+  background-image: linear-gradient(40deg, #6f116f 45%, #252525 57%);
+  color: #100b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Mantém o conteúdo centralizado na tela */
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra para destacar o header */
+}
+
+header a:hover {
+  color: #00ff00; /* Mudança de cor para o hover */
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.linkedin-icon {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+}
+
+.linkedin-icon svg {
+  width: 32px;
+  height: 32px;
+  fill: #0077b5; /* cor do ícone */
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Bordas arredondadas para todas as seções */
+}
+
+#sobre,
+#projetos,
+#contato {
+  text-align: center;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Fundo branco translúcido para destacar a seção */
+  padding: 30px;
+  border-radius: 15px; /* Bordas arredondadas */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra suave */
+}
+
+#sobreTexto {
+  position: relative;
+  left: -100%; /* Move o texto para fora da tela */
+  opacity: 0;
+  transition: left 0.5s ease, opacity 0.5s ease; /* Transição suave */
+}
+
+#sobreTexto.mostrar {
+  left: 0; /* Traz o texto de volta à posição original */
+  opacity: 1; /* Faz o texto aparecer */
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+}
+
+.myImage {
+  width: 400px;
+  height: auto;
+  border-radius: 50%; /* Imagem circular */
+  border: 3px solid #00ff00; /* Borda branca ao redor da imagem */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9); /* Sombra leve ao redor da imagem */
+}
+.button-sobre {
+  background-color: #00ff00; /* Cor de fundo verde */
+  color: #6f116f; /* Cor do texto */
+  padding: 10px 20px; /* Espaçamento interno */
+  border: none; /* Sem bordas */
+  border-radius: 5px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+  font-size: 18px; /* Tamanho da fonte */
+  transition: background-color 0.5s ease, transform 0.3s ease; /* Transição mais suave para a cor */
+}
+
+.button-sobre:hover {
+  background-color: #6f116f; /* Cor de fundo mais escura ao passar o mouse */
+  color: #fff;
+  transform: scale(0.95); /* Reduz um pouco o tamanho ao passar o mouse */
+}
+
+.button-sobre:active {
+  background-color: #3e8e41; /* Cor mais escura quando o botão é pressionado */
+  transform: scale(0.98); /* Leve redução ao pressionar */
+}
+.projetosCor {
+  color: #fff;
+  font-size: 50px;
+}
+
+h1,
+h2 {
+  color: #fff;
+  font-size: 30px;
+}
+
+.projeto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.projeto img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.projeto p {
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1); /* Sombra no topo do footer */
+  clear: both;
+}
